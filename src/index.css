@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main_color {
+  background-color: #1a4bfa;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.element {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+.element2 {
+  position: absolute;
+  top: 10px;
+  animation: circle 5s linear infinite;
+  right: 50px;
+}
+.element3 {
+  position: absolute;
+  top: -70px;
+  right: 200px;
+}
+.element4 {
+  position: absolute;
+  right: 0;
+  top: 170px;
+}
+.element6 {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+.element5 {
+  bottom: 100px;
+  left: 30px;
+  position: absolute;
+}
+.main_text {
+  color: #1a4bfa;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
