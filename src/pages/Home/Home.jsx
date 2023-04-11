@@ -4,9 +4,11 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import star from "../../assets/star.svg";
 import WhatMack from "./WhatMack";
 import PrimiseEdition from "./PrimiseEdition";
+import Header from "Components/Layout/Header";
 const Home = () => {
   return (
     <>
+      <Header />
       <div className=" container mx-auto">
         {/* Header */}
         <div className=" h-screen max-h-[700px]">

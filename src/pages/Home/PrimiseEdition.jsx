@@ -44,7 +44,6 @@ const PrimiseEdition = () => {
               to="/register"
               className="main_color text-white font-semibold px-10 rounded-full flex w-52     mt-10  hover:text-blue-700  hover:bg-white border border-blue-700 transition-all ease-in-out duration-150 py-2"
             >
-              {" "}
               LEARN MORE
             </Link>
           </div>
