@@ -5,9 +5,12 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Components/DBLayout/Navbar";
 import { useSelector } from "react-redux";
 import SideBar from "./Components/DBLayout/SideBar";
+import { useGetUserQuery } from "state/api";
 const Dashbord = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
   const [isSidebarOpen, SetIsSideBarOpen] = useState(true);
+  const userId = useSelector((state) => state.global.userId);
+  const { data } = useGetUserQuery(userId);
 
   return (
     <>
@@ -17,13 +20,15 @@ const Dashbord = () => {
         height=" 100%"
       >
         <SideBar
+          user={data || {}}
           isNonMobile={isNonMobile}
           drawerWidth="250px"
           isSidebarOpen={isSidebarOpen}
           SetIsSideBarOpen={SetIsSideBarOpen}
         />
-        <Box>
+        <Box flexGrow={1}>
           <Navbar
+            user={data || {}}
             isSidebarOpen={isSidebarOpen}
             SetIsSideBarOpen={SetIsSideBarOpen}
           />
